@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'NorseFont';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.photo-area {
+    width: clamp(100px, 60vw, 1500px);
+    height: 100vh;
+    background: url("images/image.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    font-family: 'NorseFont', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    height: 100%;
+    width: 20%;
+}
+
+#citation {
+    font-size: 0.7rem;
+    color: azure;
+}
+
+#citation a:link {
+    color: rgba(240, 248, 255, 0.8);
+    text-decoration: none;
+}
+
+.text-area {
+    background-color: aquamarine;
+}
