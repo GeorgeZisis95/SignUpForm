@@ -5,30 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Get Connected</title>
 </head>
 
 <body>
-    <div class="photo-area">
-        <div class="logo-container">
-            <img src="images/logo.png" id="logo" alt="Oding Logo">
-            <h1 id="logo-text">ODIN</h1>
-        </div>
-        <div id="citation">
-            Photo by <a
-                href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie
-                West</a> on <a
-                href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </div>
-    </div>
-    <div class="text-area">
-        <p class="intro">This is not a real online service! You know you need something like this in your life to
-            help you realize your deepest dreams. Sign up now to get started. You know you want to.
-        </p>
+    <div class="container">
+        <div class="form-title">Register </div>
         <form action="#">
-
+            <div class="info-box">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter your name">
+            </div>
+            <div class="info-box">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name">
+            </div>
+            <div class="info-box">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+            </div>
+            <div class="info-box">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="number" name="phone-number" id="phone-number" placeholder="Enter your phone number">
+            </div>
+            <div class="info-box">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="info-box">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input type="password" name="confirm-password" id="confirm-password"
+                    placeholder="Re-enter your password">
+            </div>
         </form>
+        <div class="submit-button">
+            <input type="submit" value="Register">
+        </div>
     </div>
+
+    <!-- <div class="citation">
+        Photo by <a
+            href="https://unsplash.com/@etiennegirardet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Etienne
+            Girardet</a>on <a
+            href="https://unsplash.com/photos/swimming-pool-with-stainless-steel-ladder-Xh6BpT-1tXo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </div> -->
 </body>
 
 </html>

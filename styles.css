@@ -1,60 +1,98 @@
 @font-face {
-    font-family: 'NorseFont';
-    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-family: 'PoppinsRegular';
+    src: url('fonts/Poppins-Regular.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "PoppinsRegular";
 }
 
 body {
-    display: flex;
-    align-items: center;
-}
-
-.photo-area {
-    width: clamp(100px, 60vw, 1500px);
     height: 100vh;
-    background: url("images/image.jpg") no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-    padding-top: 50px;
-}
-
-.logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    background: #F5DC69;
+}
+
+.container {
     width: 100%;
-    font-family: 'NorseFont', sans-serif;
-    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    background-color: white;
+    padding: 28px;
+    border-radius: 10px;
 }
 
-#logo {
-    height: 100%;
-    width: 20%;
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 5px;
 }
 
-#citation {
-    font-size: 0.7rem;
-    color: azure;
+.form-title::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 2px;
+    background: #F5DC69;
+    transition: 0.4s ease;
 }
 
-#citation a:link {
-    color: rgba(240, 248, 255, 0.8);
-    text-decoration: none;
+.form-title:hover::after {
+    width: 30%;
 }
 
-.text-area {
-    background-color: aquamarine;
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.info-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.info-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.info-box label {
+    width: 95%;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.info-box input {
+    all: unset;
+    height: 30px;
+    width: 85%;
+    padding-left: 5px;
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+
+.submit-button input {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    background: #F5DC69;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.submit-button input:hover {
+    background: #f6e38c;
+    color: rgb(59, 56, 56);
+    cursor: pointer;
 }
